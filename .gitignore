@@ -1,0 +1,4 @@
+# git上传忽略配置
+
+# dependencies
+/node_modules
