@@ -30,5 +30,13 @@
   npm install webpack webpack-cli --save-dev  
   npm install --save lodash
   
+  <!-- 资源管理 -->
+  npm install --save-dev style-loader css-loader
+  npm install --save-dev file-loader
+
+  <!-- 管理输出 -->
+  npm install --save-dev html-webpack-plugin
+  npm install clean-webpack-plugin --save-dev
+  
   ```
 

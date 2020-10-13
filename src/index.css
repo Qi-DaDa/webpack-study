@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'MyFont';
+  src: url("./font/_SYHTSourceHanSansCN-Heavy.woff2") format("woff2"),
+       url("./font/_SYHTSourceHanSansCN-Heavy.woff") format("woff"),
+       url("./font/_SYHTSourceHanSansCN-Heavy.ttf") format("truetype"),
+       url("./font/_SYHTSourceHanSansCN-Heavy.eot") format("embedded-opentype"),
+       url("./font/_SYHTSourceHanSansCN-Heavy.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.hello{
+  font-family: 'MyFont';
+  color: red;
+  border: 1px solid #000;
+  background-image: url('./images/logo.png') ;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 500px;
+  height: 500px;
+}
