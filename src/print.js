@@ -1,3 +1,3 @@
 export default function printMe () {
-  console.log('打印的内容!');
+  console.log('打印的内容1!');
 }

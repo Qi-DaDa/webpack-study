@@ -11,7 +11,7 @@
 
 .hello{
   font-family: 'MyFont';
-  color: red;
+  color: blue;
   border: 1px solid #000;
   background-image: url('./images/logo.png') ;
   background-repeat: no-repeat;

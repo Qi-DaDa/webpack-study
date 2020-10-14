@@ -8,7 +8,7 @@ function component () {
   var btn = document.createElement('button');
 
   // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello你好', 'webpack'], ' ');
+  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
   element.classList.add('hello')
   // 将图像添加到我们现有的 div。
   var myIcon = new Image();

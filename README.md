@@ -21,7 +21,12 @@
   ```
 ## 运行
   ``` 
+  <!-- 打包 -->
   npm run build 或 npx webpack
+  <!-- 开始本地服务 -->
+  npm start
+  <!-- 观察者模式，运行会监听改变 自动编译-->
+  npm run watch 
   ```
 ## 依赖项
   ```  
@@ -37,6 +42,29 @@
   <!-- 管理输出 -->
   npm install --save-dev html-webpack-plugin
   npm install clean-webpack-plugin --save-dev
+
+  <!-- 开发 -->
+  npm install --save-dev webpack-dev-server
   
   ```
+## 踩坑记录
+ *  配置clean-webpack-plugin根据官方文档有问题，要改为:
+  ``` 
+  const { CleanWebpackPlugin } = require("clean-webpack-plugin"); 
+  new CleanWebpackPlugin(),
+  ```
+ * 配置观察者模式时,编辑后index.html丢失,在CleanWebpackPlugin中配置:
+  ``` 
+  <!-- 防止没改变的文件被删除 -->
+  new CleanWebpackPlugin({
+      cleanStaleWebpackAssets: false,
+    }),
+  ```
+ * 配置webpack-dev-server时在 ,根据文档"scripts": { "start": "webpack-dev-server --open"},会产生Cannot find module 'webpack-cli/bin/config-yargs'报错，根据issuse解答：
+  ```
+  "scripts": {
+    "start": "webpack serve --mode development --env development",
+  },
+  ```
+  * 根据官方文档配置模块热更新 new webpack.NamedModulesPlugin()  运行报错 ，删除即可完成模块热更新
 
