@@ -11,11 +11,11 @@
 
 .hello{
   font-family: 'MyFont';
-  color: blue;
-  border: 1px solid #000;
-  background-image: url('./images/logo.png') ;
+  color: red;
+  background-image: url('./images/logo.svg') ;
   background-repeat: no-repeat;
   background-size: 100%;
   width: 500px;
   height: 500px;
+  display: flex;
 }
